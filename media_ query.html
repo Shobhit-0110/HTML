@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+            border: solid black 5px;
+            display: flex;
+        }
+        p{
+            border: solid black 2px;
+            margin: 5px;
+        }
+        #box1{
+            border: solid black 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        #box2{
+            border: solid rgb(9, 230, 105) 5px;
+            margin: 20px ;
+        }
+        @media (min-width:640px){
+            .container{
+               img{
+               flex-direction: row;
+               }
+            }
+           
+        }
+        @media (max-width :640px){
+            .container{
+                flex-direction: column;
+            }
+           
+        } 
+            </style> 
+</head>
+<body>
+
+    <div class="container">
+       <div id="box1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odio ipsam minima, neque est nisi quos repudiandae sunt optio debitis!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odio ipsam minima, neque est nisi quos repudiandae sunt optio debitis!</p>
+       </div>
+       <div id="box2">
+       <img src="laptop.jpg" alt="laptop" width="400px" height="400px">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .container {
+            margin:5px;
+            border: solid 10px black;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            border: solid 10px brown;
+            width: 400px;
+            height: 400px;
+            /* multiple shadows with offset-x|offset-y|blur-radius|spread-radius|color */
+            /* box-shadow: 10px 10px 5px 5px green,15px 15px 10px 10px red;  */
+            box-shadow: inset 10px 10px 5px 5px green,15px 15px 10px 10px red; 
+
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="laptop.jpg" alt="laptop">
+            <h1>laptop</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam repellat beatae quas in explicabo ratione, id possimus totam maxime cupiditate excepturi maiores ex alias odit ad dolores soluta animi aut.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

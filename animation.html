@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+          margin: 0px;
+          padding: 0px;  
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: orange;
+            display: flex;
+        }
+
+        .box1{
+            background-color: #09ed4d;
+            height: 80px;
+            width: 350px;
+            border: 2px solid black;
+            border-radius: 10px;
+            position: relative;
+            animation: 5s linear 1s infinite alternate none running rightmovement;
+           
+
+        }
+        @keyframes rightmovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left:90%;
+
+            }
+        }
+
+        .box2{
+            background-color: #09ed4d;
+            height: 80px;
+            width: 350px;
+            border: 2px solid black;
+            border-radius: 10px;
+            position: relative;
+             /* animation-name: leftmovement; */
+            animation: 5s linear 1s infinite alternate none running leftmovement;
+
+        }
+
+      
+
+        @keyframes leftmovement{
+            from{
+                top: 90%;
+                left: 90%;
+            }
+            to{
+                top: 90%;
+                left:0;
+
+            }
+        }
+        .circle{
+            background-color: #ed2f09;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            position: relative;
+            border-radius: 100px;
+            margin: 5px;
+            padding: 2px;
+            top: 300px;
+            left: 700px;
+            /* animation-name: movement; */
+            animation: 10s ease-in  0s infinite alternate-reverse  none running movement;
+         }
+
+         @keyframes movement {
+            0%{ 
+                top: 1%;
+                left: 5%;  
+            }
+            30% {
+                top: 5%;
+                left: 90%;  
+            }
+            60%{
+                top: 90%;
+                left: 10%;  
+             }    
+             100%{ 
+                top: 95%;
+                left: 90%;  
+             }
+         }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+
+        <div class="circle"></div>
+
+        <div class="box2"></div>
+    </div>
+    
+</body>
+</html>
